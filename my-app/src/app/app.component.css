@@ -5,7 +5,7 @@
 /* Styling for Home Page */
 .Navbar{
    display: flex;
-   background-color: white;
+   background-color:gray;
    color: black;
    height: 70px;
    border-style: outset;
@@ -16,10 +16,13 @@
    
 }
 .Navbar h1{
-    margin-left: 20px;
+    margin-left: 30px;
     margin-top: 10px;
     font-weight: 700;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: white;
+    margin-bottom: 10px;
+    border-style:groove;
 }
 .Navbar img{
     width: 200px;
