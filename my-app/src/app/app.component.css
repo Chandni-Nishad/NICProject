@@ -3,97 +3,139 @@
     padding: 0;
 }
 /* Styling for Home Page */
-.Navbar{
-   display: flex;
-   background-color:gray;
-   color: black;
-   height: 70px;
-   border-style: outset;
-   border-color: black;
-   margin-top: 5px;
-   margin-left: 5px;
-   margin-right: 5px;
-   
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
 }
-.Navbar h1{
-    margin-left: 30px;
-    margin-top: 10px;
-    font-weight: 700;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: white;
+.TopNav{
+    width: 100%;
+    height: 70px;
     margin-bottom: 10px;
-    border-style:groove;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 10px;
 }
-.Navbar img{
+.TopNav img{
     width: 200px;
     height: 70px;
-    image-resolution:initial;
+
 }
-.Navbar1{
-    border-style:inset;
+.TopNav img :hover{
+    background-color: #333;
+    color: #333;
+}
+.TopNav1{
+    flex-grow: 1;
+    
+}
+.TopNav1 h2{
+    color: rgb(31, 69, 107);
+    margin-left: 25px;
     margin-top: 5px;
-    margin-left: 50px;
-    margin-bottom: 5px;
-    width: 50%;
-    margin-right: 5px;
+    font-family: Arial, sans-serif;
+    font-weight:900;
+    font-size: 2.5rem;
 }
-.Navbar2{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color:darkred;
-    height:40px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border-style: inset;
+.TopNav1 p{
+    color: black;
+    font-family: Arial, sans-serif;
+    margin-left: 25px;
 }
-.Navbar2 a{
-    color: white;
-    font-size: 1.2rem;
-    margin-top: 5px;
+@media screen and (max-width : 768px) {
+    .TopNav{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .TopNav img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
    
 }
-.Navbar3{
+.TopNav2{
+    margin-right: 10px;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+   color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+.Navbar{
     display: flex;
     margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
 }
-.Navbar3 img{
+.Navbar img:hover{
+    background-color:#555;
+    
+}
+.Navbar img{
+    height: 500px;
     width: 60%;
-    height: 400px;
-    border-style: inset;
+    border-style:outset;
+    border-color: #333;
 }
-.Navbar4{
-    margin-left: 5px;
-    border-style: groove;
+.blink{
+    
+    margin-left: 10px;
+    border-style: solid;
+    border-color: #333;
     width: 100%;
+    background-color: white;
 }
-.Navbar4 h2{
-
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    height: 50px;
-    justify-content: space-evenly;
+.blink h1{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.blink h1:hover{
+    background-color:gray;
+}
+/* Define keyframes for the blink effect */
+@keyframes blink {
+    0% { opacity: 1; } /* Start with full opacity */
+    50% { opacity: 0; } /* Blink to hidden */
+    100% { opacity: 1; } /* Return to full opacity */
 }
 
-
-/* Styling For Contact Page */
-
-.ContactNavbar{
-    background-color: darkblue;
-    color: white;
-    border-style: ridge;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    height: 50px;
-    justify-content: space-evenly;
+/* Apply the blink animation to an element */
+.blink {
+    animation: blink 2s infinite; /* Blink animation lasts for 1 second and repeats infinitely */
 }
-.ContactNavbar h3{
-    margin-top: 5px;
-    margin-left: 5px;
-    font-size: 1.5rem;
+
+container {
+    padding: 20px;
 }
