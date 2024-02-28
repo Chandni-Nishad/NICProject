@@ -5,13 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Responsive Website</title>
 <link rel="stylesheet" href="app.component.css">
+<script src="app.component.js"></script>
 </head>
 <body>
-<script>
-    function reloadPage() {
-    window.location.href = window.location.href;
-}
-</script>
+
 <header>
     <div class="TopNav">
         <img src="https://presentations.gov.in/wp-content/uploads/2020/06/nic-logo-nic-logo-1-bilingual-white-1-01.jpg?x93559">
@@ -25,11 +22,21 @@
     </div>
     <nav>
         <ul>
-            <li><a href="#home" onclick="reloadPage()"  aria-current="page">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#centers">Centers</a></li>
+            <select id="redirectMenu" onchange="redirectToPage()">
+                <option value="">Centers</option>
+                <option value="page1.html"> State Centers </option>
+                <option value="page2.html"> District Centers </option>
+                <option value="page3.html">Central Center</option>
+            </select>
             <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#about">About Us</a></li>
+            <select id = redirectMenu onchange="redirectToPage()">
+                <option value=""> About Us </option>
+                <option value=""> Knwo About Website </option>
+                <option value=""> About NIC </option>
+                <option value=""> Who's Who </option>
+            </select>
             <li><a href="#signup">Signup</a></li>
             <li><a href="#login">Login</a></li>
         </ul>
@@ -44,7 +51,10 @@
 
 <div class="container">
     <!-- Add your content here -->
+    <!---->
 </div>
+
+
 
 </body>
 </html>
