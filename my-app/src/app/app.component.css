@@ -2,165 +2,149 @@
     margin: 0;
     padding: 0;
 }
-/* Styling for Home Page */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: gray;
+body{
+    background-color: #e7e3e3;
 }
-.TopNav{
-    width: 100%;
-    height: 70px;
-    margin-bottom: 10px;
-    background-color:white;
+.TopNavbar{
     display: flex;
-    align-items: center;
-    color: #333;
-    padding: 10px;
-}
-.TopNav img{
-    width: 200px;
-    height: 70px;
-
-}
-.TopNav img :hover{
-    background-color: #333;
-    color: #333;
-}
-.TopNav1{
-    flex-grow: 1;
-    
-}
-.TopNav1 h2{
-    color: rgb(31, 69, 107);
-    margin-left: 25px;
-    margin-top: 5px;    
-    font-family: Arial, sans-serif;
-    font-weight:900;
-    font-size: 2.5rem;
-}
-.TopNav1 p{
-    color: black;
-    font-family: Arial, sans-serif;
-    margin-left: 25px;
-}
-@media screen and (max-width : 768px) {
-    .TopNav{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .TopNav img {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-    
+    height: 100px;
+    background-color: white;
    
 }
-.TopNav2{
-    margin-right: 10px;
+.TopNavbar img{
+    margin-right: 20px;
+    height: 80px;
+    margin-top: 5px;
+    margin-left: 10px;
 }
-nav{
+.TopNavbar img:hover{
+    border-style:inset;
+    border-color: rgb(102, 151, 250);
+    border-radius: 9px;
+}
+.TopNavbar h1{  color: rgb(31, 69, 107);
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+.TopNavbar p{
+    margin-top: 5px;
+}
+.NavList{
+    display: flex;
+    /*justify-content: space-evenly;*/
+    border-color: gray;
+    background-color: rgba(46, 42, 42, 0.897);
+    height: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+   
+}
+.NavList li{
+    list-style: none;
+    margin-top: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.NavList li a{
+    text-decoration: none;
+    color: white;
+    
+    
+}
+.NavList li a i{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.NavList li a:hover{
+    background-color: #555;
+    padding: 5px;
+    border-radius: 9px;
+    padding: 5px;
+}
+.UpperBody{
+    display: flex;
+    height: 410px;
+    background-color: white;
+    
+}
+
+.UpperBodyContainer{
     display: flex;
     justify-content: space-evenly;
 }
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-   color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #555;
-}
-
-
-.Navbar{
-    display: flex;
-    margin-top: 5px;
-}
-.Navbar img:hover{
-    background-color:#555;
-    
-}
-.Navbar img{
-    height: 500px;
-    width: 60%;
-    border-style:outset;
-    border-color: #333;
-}
-.blink{
-    
-    margin-left: 10px;
-    border-style: solid;
-    border-color: #333;
+.UpperBodyContainer img {
     width: 100%;
+    height: 400px;  
+}
+
+
+
+
+.UpperBody h2{
+    color: rgba(6, 6, 157, 0.716);
+    background-color: #cac7c7;
+    width: 50%;
+    height: 395px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: 2rem;
+    
+}
+
+
+.slider-container {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
     background-color: white;
-}
-.blink h1{
-    margin-top: 10px;
-    margin-left: 10px;
-}
-.blink h1:hover{
-    background-color:gray;
-}
-/* Define keyframes for the blink effect */
-@keyframes blink {
-    0% { opacity: 1; } /* Start with full opacity */
-    50% { opacity: 0; } /* Blink to hidden */
-    100% { opacity: 1; } /* Return to full opacity */
-}
-
-/* Apply the blink animation to an element */
-.blink {
-    animation: blink 2s infinite; /* Blink animation lasts for 1 second and repeats infinitely */
-}
-
-
-select {
-    padding: 5px;
-    cursor: pointer;
-    outline: none;
-    background: transparent;
-    color: white;
-    border: none;
-    font-size: 1rem;
+  }
+  
+  .card {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 150px;
+    margin-right: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+.card img{
+    height: 80px;
     width: 100px;
   }
-  
-  /* Style for the options within the select element */
-  option {
-    padding: 10px;
+
+  .card img:hover{
+    background-color: rgb(204, 201, 201);
+  }
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
     cursor: pointer;
-    color: gray;
+    padding: 10px;
+    z-index: 1;
   }
   
-  /* Style for when an option is hovered over */
-  option:hover {
-    background-color: #e0e0e0;
+  .prev {
+    left: 0;
   }
-container {
-    padding: 20px;
-}
+  
+  .next {
+    right: 0;
+  }
+  

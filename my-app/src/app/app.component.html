@@ -1,60 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsive Website</title>
-<link rel="stylesheet" href="app.component.css">
-<script src="app.component.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="app.component.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
-
-<header>
-    <div class="TopNav">
-        <img src="https://presentations.gov.in/wp-content/uploads/2020/06/nic-logo-nic-logo-1-bilingual-white-1-01.jpg?x93559">
-        <div class="TopNav1">
-            <h2> NIC Support Matrix </h2>
-            <p> For Helping Running Projects in NIC </p>
+    <nav class="TopNavbar">
+        <img
+            src="https://presentations.gov.in/wp-content/uploads/2020/06/NIC-LOGO-IDENTITY-VARIANTS_white-01.png?x93559">
+        <div class="Navbar">
+            <h1> NIC Suppport Matrix </h1>
+            <p> For Helping Running Projects in NIC Chhattisgarh </p>
         </div>
-        <div class="TopNav2">
-            <img src="https://blogassets.leverageedu.com/blog/wp-content/uploads/2019/12/23174500/International-Internships-for-Indian-Students.jpg">
-        </div>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <select id="redirectMenu" onchange="redirectToPage()">
-                <option value="">Centers</option>
-                <option value="page1.html"> State Centers </option>
-                <option value="page2.html"> District Centers </option>
-                <option value="page3.html">Central Center</option>
-            </select>
-            <li><a href="#contact">Contact Us</a></li>
-            <select id = redirectMenu onchange="redirectToPage()">
-                <option value=""> About Us </option>
-                <option value=""> Knwo About Website </option>
-                <option value=""> About NIC </option>
-                <option value=""> Who's Who </option>
-            </select>
-            <li><a href="#signup">Signup</a></li>
-            <li><a href="#login">Login</a></li>
-        </ul>
     </nav>
-</header>
-<div class="Navbar">
-    <img src="https://www.nic.in/wp-content/uploads/2018/06/digital-india-intern-nic-1024x521.jpg">
-    <div class="blink">
-        <h1> Upcoming Projects </h1>
+
+    <ul class="NavList">
+        <li> <a href="#Home" class=""><i class="bi bi-house-fill"></i> </a></li>
+        <li><a href="#About" class="">About</a></li>
+        <li><a href="#Contact" class="">Contact</a></li>
+        <li><a href="#Service" class="">Services </a></li>
+        <li><a href="#Registration" class="">Registration</a></li>
+        <li><a href="#User Login" class="">User Login</a></li>
+        <li><a href="#Admin Login" class="">Admin Login </a></li>
+    </ul>
+    <div class="UpperBody">
+        <div class="UpperBodyContainer">
+            <div class="imagecontainer active"><img src="https://www.nic.in/wp-content/uploads/2018/06/DigitalIndia-Internship-NIC-1024x521.jpg"></div>
+            <div class="imagecontainer"><img src="https://www.nic.in/wp-content/uploads/2022/08/nic-services-slider-01-scaled.jpg"></div>
+        </div>
+
+        <h2> Upcoming Projects </h2>
+
     </div>
-</div>
+    <div class="slider-container">
+        <div class="slider">
+          <div class="card"><a href="https://digitalindia.gov.in/"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/95/Digital_India_logo.svg/1200px-Digital_India_logo.svg.png"></a></div>
+          <div class="card"><a href="https://www.makeinindia.com/"><img src="https://www.makeinindia.com/sites/default/files/mii.png"></a></div>
+          <div class="card"><a href="https://data.gov.in/"><img src="https://data.gov.in/_nuxt/img/logo.f9fcba1.svg"></a></div>
+          <div class="card"><a href="https://www.mygov.in/"><img src="https://igod.gov.in/assets/images/mygov.png"></a></div>
+          <div class="card"><a href="https://igod.gov.in/"><img src="https://training.cg.nic.in/MCA/assets2/images/carousel/goidirectory.png"></a></div>
+          <div class="card"><a href="https://nkn.gov.in/en/"><img src="https://presentations.gov.in/wp-content/uploads/2020/06/NKN_V_Preview.png?x93559"></a></div>
+        </div>
+        <button class="prev" onclick="moveSlider(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlider(1)">&#10095;</button>
+      </div>
 
-<div class="container">
-    <!-- Add your content here -->
-    <!---->
-</div>
+    <script src="script.js"></script>
 
 
 
+
+
+    
 </body>
+
 </html>
